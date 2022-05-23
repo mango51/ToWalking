@@ -11,7 +11,7 @@
 	.titleFont{
 	font-family: 'Hanna', sans-serif;
 	color:#FFD200;
-	font-size: 23px;
+	font-size: 20px;
 	}
 	
 	.centeringContainer { 
@@ -20,22 +20,28 @@
 	} 
 	
 	.navbarDefaultFont{
-		font-size: 14px;
+		font-size: 13px;
 	}
 	
 	.putaspace{
-		margin-right: 50px;
+		margin-right: 40px;
 		margin-top:10px;
 	}
 	.others{
-		margin-top:10px;
+		margin-top:12px;
 	}
 	
 	.navbarExtra{
 		line-height: 5px;
 	}
+  .iconplace{
+    margin-left: 105px;
+  }
+  .iconspace2{
+    margin-left: 5px;
+  }
 	input {
-  width: 300px;
+  width: 250px;
   height: 32px;
   font-size: 15px;
   border: 0;
@@ -50,15 +56,21 @@
     padding: 0 20px;
     font-size: 1rem;
     text-align: center;
-    width: 300px;
+    width: 250px;
     color: #fff;
     border-radius: 20px;
     background-color: #FFD200;
 }
+
+
+.navbar-inner {
+    border-bottom: 1px solid black;
+}
 </style>
+
 </head>
 <body>
-<nav class="navbar navbar-expand-lg bg-light navbarExtra">
+<nav class="navbar navbar-expand-lg bg-default navbarExtra navbar-white navbar-inner">
   <div class="container-fluid center-block" style='width:500px;'>
     <a class="navbar-brand putaspace" href="#"><p class="titleFont">투월킹</p></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -66,14 +78,21 @@
     </button>
     <div class="collapse navbar-collapse others" id="navbarNav">
       <ul class="navbar-nav">
+
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#"><p class="navbarDefaultFont">산책로 등록</p></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#"><p class="navbarDefaultFont">산책로 순위</p></a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
+        <li class="nav-item iconplace">
+          <img src="../resources/img/map.JPG" width="28" height="28">
+        </li>
+        <li class="nav-item iconspace2">
+          <img src="../resources/img/alarm.JPG" width="28" height="28">
+        </li>
+        <li class="nav-item iconspace2">
+          <img src="../resources/img/mypage.JPG" width="28" height="28">
         </li>
       </ul>
     </div>
